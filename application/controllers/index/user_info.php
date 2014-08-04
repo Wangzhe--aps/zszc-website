@@ -6,7 +6,17 @@ class User_info extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('index/404.html');
+		$this->load->view('index/donate-succeed.html');
+	}
+
+	/**
+	 * 登陆成功
+	 */
+	function login_success(){
+		$this->load->view('index/signup-succeed.html');
+	}
+	function userregist(){
+		$this->load->view('index/signup.html');
 	}
 }
 

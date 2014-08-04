@@ -8,7 +8,7 @@ class Pro_info extends CI_Controller {
 	{
 		echo '显示成功';
 	}
-
+	funcktion
 }
 
 /* End of file pro_info.php */
