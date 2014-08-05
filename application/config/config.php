@@ -67,9 +67,10 @@ $config['url_suffix'] = '';
 | This determines which set of language files should be used. Make sure
 | there is an available translation if you intend to use something other
 | than english.
+| 修改系统提示语言为中文
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'zh';
 
 /*
 |--------------------------------------------------------------------------
@@ -277,9 +278,9 @@ $config['cookie_secure']	= FALSE;
 |
 | Determines whether the XSS filter is always active when GET, POST or
 | COOKIE data is encountered
-|
+| 开启post/get跨站请求验证
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -339,6 +340,7 @@ $config['time_reference'] = 'local';
 | If your PHP installation does not have short tag support enabled CI
 | can rewrite the tags on-the-fly, enabling you to utilize that syntax
 | in your view files.  Options are TRUE or FALSE (boolean)
+| 如果想打开<?= ?>以及其他缩写功能，此处设为TRUE
 |
 */
 $config['rewrite_short_tags'] = FALSE;
