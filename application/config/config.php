@@ -14,7 +14,7 @@
 | path to your installation.
 | 
 */
-$config['base_url']	= 'http://allheart.com/';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
