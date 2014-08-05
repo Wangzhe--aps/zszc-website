@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'test';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'www.allheart.cn';
@@ -63,6 +63,26 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+/**
+ * 增加测试数据库配置项
+ */
+$db['test']['hostname'] = 'localhost';
+$db['test']['username'] = 'fuchao';
+$db['test']['password'] = 'fuchao2012';
+$db['test']['database'] = 'zszc';
+$db['test']['dbdriver'] = 'mysql';
+$db['test']['dbprefix'] = 'zszc';
+$db['test']['pconnect'] = TRUE;
+$db['test']['db_debug'] = TRUE;
+$db['test']['cache_on'] = FALSE;
+$db['test']['cachedir'] = '';
+$db['test']['char_set'] = 'utf8';
+$db['test']['dbcollat'] = 'utf8_general_ci';
+$db['test']['swap_pre'] = '';
+$db['test']['autoinit'] = TRUE;
+$db['test']['stricton'] = FALSE;
+
 
 
 /* End of file database.php */
