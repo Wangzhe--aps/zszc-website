@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="众善，众筹，捐助，爱心，慈善，项目">
+    <title>发起项目</title>
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap3.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.4.3/standard/ckeditor.js"></script>
+</head>
+<body>
+<!--top-black-->
+<div class="topimg">
+        <div class="topimgbar">
+            <span class="e-tel">联系我们：010-82418521</span>
+            <ul class="userinfo">
+                <li>您好&nbsp;</li>
+                <li> <a href="">yingheye</a></li>
+                <li id="logout" class="logout"><a href="./signin.html">退出</a></li>
+            </ul>
+        </div>
+</div>
+<!--top-nav-->
+<div class="top">
+    <div class=topbar>
+        <div class=logoimg>
+            <span><img src="./img/allheart/logo.png" alt="众善LOGO" /><img alt="" src="./img/allheart/slogan.png"></span>
+        </div>
+        <div class=logoinfo>
+            <ul class="nav nav-pills" style="font-size: 15px;padding-top: 15px;font-weight: bold;">
+                <li><a href="./donate-list.html">捐助项目</a></li>
+                <li><a href="./rise-welcome.html">发起项目</a></li>
+                <li><a href="bbs.allheart.cn">社区</a></li>
+                <li style="padding-right:10px;float:right;"><input id="goin" type="button" class="btn btn-primary" style="width: 100px;" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/login'" value="登录" />
+                </li>
+                <li style="padding-right:10px;float:right;">
+                <input id="goout" type="button" class="btn btn-primary" style="width: 100px;" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/register'" value="注册" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--containt-->
+<div class="all">
+    <div style="height: 500px;">
+        <div class="pub-project">
+            <div style="padding: 30px 40px 10px 40px;">
+                <div id="breadcrumb" class="clearfix">
+                    <ul class="crumbs">
+                        <li class="one"><a style="z-index:9;" href="#" class="on"><span>1</span>填写项目信息</a></li>
+                        <li><a style="z-index:8;" href="#"><span>2</span>验证发起人信息</a></li>
+                        <li><a style="z-index:7;" href="#"><span>3</span>申请成功</a></li>
+                    </ul>
+                </div>
+                <form class="pub-project-box" onsubmit="" method="post" action="http://www.allheart.cn/index.php/action/register" role="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">项目名称</label>
+                        <input type="text" style="height:40px;" placeholder="请输入本项目的标题" name="user_name" id="user_name" class="form-control e-desc-box">
+                        <span class="e-desc">最多不超过30个字、符号或数字组成</span>
+                    </div>
+                    <div class="form-group">
+                       <p for="exampleInputEmail1">项目具体描述</p>
+                        <textarea  style="visibility:hidden;display:none;" class="ckeditor" id="ckeditor" name="ckeditor">
+                                <h2>关于我（也可使用个性化小标题）</h2>
+								<p>向支持者介绍你自己或你的团队，并详细说明你与所发起的项目之间的背景，让支持者能够在最短时间内了解你，以拉近彼此之间的距离。</p>
+								<h2>我想要做什么（也可使用个性化小标题）</h2>
+								<p>这是项目介绍中最关键的部分，建议上传5张以上高清图片（宽700、高不限），配合文字来简洁生动地说明你的项目，让支持者对你要做的事情一目了然并充满兴趣。</p>
+								<h2>为什么我需要你的支持及资金用途（也可使用个性化小标题）</h2>
+								<p>请在这一部分说明你的项目不同寻常的特色，为什么需要大家的支持以及详细的资金用途，这会增加你项目的可信度并由此提高筹资的成功率。</p>
+								<h2>我的承诺与回报（也可使用个性化小标题）</h2>
+								<p>请在此处展示你为支持者准备的回报，回报方式将是左右项目能否筹资成功的关键因素，建议设定两个以上的回报方式，保证有趣且可行，并明确实现回报的时间。</p>
+								<h2>可能存在的风险（也可使用个性化小标题）</h2>
+								<p>请在此标注你的项目在实施过程中可能存在的风险，让支持者对你的项目有全面而清晰的认识。</p>
+								<h2>其他备注信息（也可使用个性化小标题）</h2>
+								<p>其他需要支持者了解的信息。</p>
+                        </textarea>
+                        <span class="e-desc">最多不超过300个字、符号或数字组成</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">项目图片</label>
+                        <input type="submit" value="上传" style="" class="btn btn-primary btn-uploadimg">
+                        <ul class="e-uploadimg">
+                            <li><img src="" alt=""/></li>
+                            <li><img src="" alt=""/></li>
+                            <li><img src="" alt=""/></li>
+                        </ul>
+                        <span class="e-desc e-desc-img">请上传长宽比为5:4的图片，支持jpeg、png、bmp格式图片，最多支持3张</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">预筹资金额</label>
+                        <input type="text" style="height:40px;" placeholder="单次筹集资金不超过100万人民币" name="user_email" id="user_email" class="form-control e-count-box"> &nbsp元
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">筹集时间</label>
+                        <input  style="height:40px;" placeholder="开始日期" name="user_pwd" id="user_pwd" class="form-control e-date">
+                        至
+                        <input  style="height:40px;" placeholder="结束日期" name="user_pwd" id="user_pwd" class="form-control e-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">筹资说明</label>
+                        <textarea  style="height:270px;" placeholder="" name="pwd_repeat" id="pwd_repeat" class="form-control e-desc-box"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">担保信息</label>
+                        <input type="text" style="height:40px;" placeholder="" name="user_email" id="user_email" class="form-control e-desc-box"> &nbsp元
+                    </div>
+                    <input type="submit" value="下一步" style="display: block;width: 100px;margin-top: 10px; margin-left: 102px;;font-size: 16px;font-family: 微软雅黑;" class="btn btn-primary">
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

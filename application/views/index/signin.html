@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="description" content="众善，众筹，捐助，爱心，慈善，项目">
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--top-black-->
+<div class="topimg">
+        <div class="topimgbar">
+            <span class="e-tel">联系我们：010-82418521</span>
+            <ul class="userinfo">
+                <li>您好&nbsp;</li>
+                <li> <a href="">yingheye</a></li>
+                <li id="logout" class="logout"><a href="./signin.html">退出</a></li>
+            </ul>
+        </div>
+</div>
+<!--top-nav-->
+<div class="top">
+    <div class=topbar>
+        <div class=logoimg>
+            <span><img src="./img/allheart/logo.png" alt="众善LOGO" /><img alt="" src="./img/allheart/slogan.png"></span>
+        </div>
+        <div class=logoinfo>
+            <ul class="nav nav-pills" style="font-size: 15px;padding-top: 15px;font-weight: bold;">
+                <li><a href="./donate-list.html">捐助项目</a></li>
+                <li><a href="./rise-welcome.html">发起项目</a></li>
+                <li><a href="bbs.allheart.cn">社区</a></li>
+                <li style="padding-right:10px;float:right;"><input id="goin" type="button" class="btn btn-primary" style="width: 100px;" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/login'" value="登录" />
+                </li>
+                <li style="padding-right:10px;float:right;">
+                <input id="goout" type="button" class="btn btn-primary" style="width: 100px;" onclick="javascrtpt:window.location.href='http://www.allheart.cn/index.php/welcome/register'" value="注册" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--content-->
+<div class="all">
+    <div style="height: 500px;">
+        <div class="b-login">
+            <div class="b-con">
+                <span class="forum-title">我要登录</span>
+                <form class="pub-project-box" onsubmit="" method="post" action="http://www.allheart.cn/index.php/action/register" role="form">
+                    <div class="form-group">
+                        <input type="text" style="height:40px;" placeholder="用户名" name="user_name" id="user_name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" style="height:40px;" placeholder="登录密码" name="user_email" id="user_email" class="form-control">
+                    </div>
+                    <input type="submit" value="登录" style="display: block;margin-top: 10px;font-size: 16px;font-family: 微软雅黑;" class="btn btn-primary e-login-btn">
+                </form>
+            </div>
+            <p class="text-center">还没有众善帐户，<a href="./signup.html">立即注册</a></p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    
+</div>
+</body>
+</html>
