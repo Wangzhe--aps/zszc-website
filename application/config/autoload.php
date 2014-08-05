@@ -50,9 +50,10 @@ $autoload['packages'] = array();
 | Prototype:
 |
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
+|   自动加载数据库类库文件
 */
 
-$autoload['libraries'] = array("session");
+$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 
 
 /*
@@ -62,9 +63,10 @@ $autoload['libraries'] = array("session");
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
+|   自动加载url帮助函数
 */
 
-$autoload['helper'] = array();
+$autoload['helper'] = array('url');
 
 
 /*
@@ -94,6 +96,7 @@ $autoload['config'] = array();
 | NOTE: Do not include the "_lang" part of your file.  For example
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
+|  自动加载中文包
 */
 
 $autoload['language'] = array();
