@@ -955,12 +955,9 @@ html[xmlns] .clearfix {
     margin:50px 150px 50px;
 }
 
-
-
 .youyan {
     padding: 25px;
 }
-
 
 .rise-welcome {
     width: 900px;
@@ -986,4 +983,8 @@ html[xmlns] .clearfix {
 
 .ck-width {
     width: a;
+}
+/*页面底部信息格式*/
+.footer{
+    text-align: center;
 }

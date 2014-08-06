@@ -67,12 +67,12 @@ $db['default']['stricton'] = FALSE;
 /**
  * 增加测试数据库配置项
  */
-$db['test']['hostname'] = 'localhost';
-$db['test']['username'] = 'fuchao';
-$db['test']['password'] = 'fuchao2012';
+$db['test']['hostname'] = '127.0.0.1';
+$db['test']['username'] = 'root';
+$db['test']['password'] = '';
 $db['test']['database'] = 'zszc';
 $db['test']['dbdriver'] = 'mysql';
-$db['test']['dbprefix'] = 'zszc';
+$db['test']['dbprefix'] = 'zszc_';
 $db['test']['pconnect'] = TRUE;
 $db['test']['db_debug'] = TRUE;
 $db['test']['cache_on'] = FALSE;
