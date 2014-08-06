@@ -6,7 +6,7 @@ class User_info extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('index/donate-succeed.html');
+		$this->load->view('index/rise-welcome.html');
 	}
 
 	/**
