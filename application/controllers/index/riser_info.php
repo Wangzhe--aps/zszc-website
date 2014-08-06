@@ -8,7 +8,9 @@ class Riser_info extends CI_Controller {
 	{
 		echo '显示成功';
 	}
-
+	function rise-new(){
+		$this->load->view('index/step1.html');
+	}
 }
 
 /* End of file riser_info.php */
